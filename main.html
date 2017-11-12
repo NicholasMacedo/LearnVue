@@ -28,8 +28,42 @@
     <p v-if="seen">Now you see me! <br> Change demoThree.seen to false in console to make me disapear! </p>
   </div>
 
+  <hr>
 
+  <h3> Fourth Vue Example: Displaying an array in Vue </h3>
+  <div id="demo4">
+	<ol>
+	  <li v-for="todo in todos">
+	    {{ todo.text }}
+	  </li>
+    </ol>
+  </div>
 
+  <hr>
+
+  <h3> Fifth Vue Example: Actions On User Action</h3>
+  <div id="demo5">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">Reverse Message</button>
+  </div>
+
+  <hr>
+
+  <h3>Sixth Vue Example: Dynamically Bind Fields</h3>
+  <div id="demo6">
+    <p>{{ message }}</p>
+    <input v-model="message">
+  </div>
+
+  <hr>
+
+  <h3> Seventh Vue Example: Raw HTML Injection</h3>
+  <div id="demo7" v-html="rawHtml"><!-- HTML is injected into here from rawHtml --></div>
+
+  <hr>
+
+  <!-- <h3> Eighth Vue Example:</h3> -->
+  
 </div>
 
 
