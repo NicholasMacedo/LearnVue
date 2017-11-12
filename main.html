@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learn Vue</title>
+</head>
+<body>
+	<h1>Vue.js Examples</h1>
+
+  <h3> First Vue Example: Dynamic Message </h3>
+  <div id="demo1">
+    <p>{{message}}</p>
+  </div>
+
+  <hr>
+
+  <h3> Second Vue Example: Dynamic Vue Title </h3>
+  <div id="demo2">
+    <p v-bind:title="message">
+    Hover over me to get the last time you loaded the page! <br>
+    This is done by dynamically binding the title with v-bind!
+  </p>
+  </div>
+
+  <hr>
+
+  <h3> Third Vue Example: Conditionals and Seen </h3>
+  <div id="demo3">
+    <p v-if="seen">Now you see me! <br> Change demoThree.seen to false in console to make me disapear! </p>
+  </div>
+
+
+
+</div>
+
+
+</body>
+<!-- Include Vue.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+<script src="main.js"></script>
+</html>
